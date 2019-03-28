@@ -1,0 +1,30 @@
+// SECTION search :: START
+
+section#search.search
+  .c-grid
+    .search__wrapper
+      .search__wrapper-left
+
+        .search__row
+
+          h3.search__title!= "Search for a counsellor </br>that focuses on depression"
+
+          form.search__form(autocomplete='off' action='' method='')
+            .search__form-field
+              input.search__form-input(type="text" name='' placeholder='Type to search...')
+              button.search__form-btn(type='submit')
+                i.icon-font.icon-search
+                span!= "Search"
+
+          .search__badge
+            p.search__badge-text!= "Towns based on your location"
+            .search__badge-content
+              a.search__badge-btn(href="#" class="" title="")!= "Yateley"
+              a.search__badge-btn(href="#" class="" title="")!= "Camberley"
+              a.search__badge-btn(href="#" class="" title="")!= "Sandhurst"
+
+      .search__wrapper-right
+        .search__img
+          img(src="/img/img-search.svg" alt="" title="")
+
+// SECTION search :: END

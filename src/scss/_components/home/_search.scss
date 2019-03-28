@@ -1,0 +1,153 @@
+// SECTION search :: START
+
+.search {
+  padding-top: 35px;
+  padding-bottom: 125px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+
+    &-left,
+    &-right {
+      width: 50%;
+      max-width: 100%;
+    }
+
+    &-left {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &-right {}
+  }
+
+  &__row {
+    width: 100%;
+    max-width: 648px;
+  }
+
+  &__title {
+    padding-bottom: 18px;
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 1.35;
+    color: $c-dark-slate-blue;
+  }
+
+  &__form {
+    padding-bottom: 25px;
+
+    &-field {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 648px;
+      height: 56px;
+      padding: 4px;
+      border-radius: 28px;
+      border: solid 1px #e7eaed;
+      background-color: #f6f6f6;
+    }
+
+    &-input {
+      outline: none;
+      flex: 1;
+      width: 100%;
+      height: 100%;
+      padding: 0 19px;
+      margin-right: 4px;
+      border: none;
+      box-shadow: none;
+      background-color: transparent;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 1.22;
+      color: $c-dark-slate-blue;
+      font-family: 'PT Sans', sans-serif;
+      @include inputPlaceholder {
+        font-family: 'PT Sans', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.22;
+      }
+    }
+
+    &-btn {
+      outline: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 118px;
+      height: 100%;
+      border: none;
+      box-shadow: none;
+      border-radius: 24px;
+      background-color: #007585;
+
+      .icon-font {
+        margin-right: 7px;
+        color: #ffffff;
+        font-size: 16px;
+      }
+
+      span {
+        font-family: 'PT Sans', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        color: #ffffff;
+      }
+    }
+  }
+
+  &__badge {
+    display: flex;
+
+    &-text {
+      white-space: nowrap;
+      font-family: 'PT Sans', sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      color: $c-dark-slate-blue;
+    }
+
+    &-content {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 13px;
+    }
+
+    &-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 24px;
+      padding: 0 12px;
+      border-radius: 12px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+      background-color: #f6f6f6;
+      font-family: 'PT Sans', sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1;
+      text-align: center;
+      color: #007585;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__img {
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+// SECTION search :: END
