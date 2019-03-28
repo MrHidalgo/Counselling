@@ -1,0 +1,71 @@
+// SECTION main :: START
+
+.main {
+  padding-top: 58px;
+  padding-bottom: 64px;
+
+  &__wrapper {
+    width: 100%;
+    max-width: 858px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__subtitle {
+    padding-bottom: 8px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    line-height: 1.38;
+    color: #008192;
+  }
+
+  &__title {
+    padding-bottom: 20px;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 1.24;
+    color: #132e49;
+  }
+
+  &__user {
+    display: flex;
+
+    &-left {
+      width: 55px;
+    }
+
+    &-right {
+      flex: 1;
+    }
+
+    &-circle {
+      overflow: hidden;
+      z-index: 1;
+      position: relative;
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+
+      img {
+        z-index: 0;
+        @extend %imageResCoverAbs;
+      }
+    }
+
+    p {
+      font-family: "PT Sans", sans-serif;
+      font-weight: bold;
+      line-height: 1.38;
+      color: #132e49;
+    }
+
+    span {
+      font-family: 'PT Sans', sans-serif;
+      font-size: 14px;
+      line-height: 1.43;
+      color: #767676;
+    }
+  }
+}
+
+// SECTION main :: END
