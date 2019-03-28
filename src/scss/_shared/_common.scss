@@ -1,5 +1,27 @@
 // COMMON :: START
 
+// title
+.c-title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.42;
+  text-align: center;
+  color: $c-dark-slate-blue;
+}
+// title :: end
+
+// subtitle
+.c-subtitle {
+  @extend %fontsPTSans;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.43;
+  text-align: center;
+  color: $c-ocean;
+  text-transform: uppercase;
+}
+// subtitle :: end
+
 // social
 .social {
   &__list {
