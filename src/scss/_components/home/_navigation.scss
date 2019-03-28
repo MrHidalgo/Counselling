@@ -1,0 +1,50 @@
+// SECTION navigation :: START
+
+.navigation {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    min-height: 82px;
+    border-top: 1px solid $c-light-periwinkle;
+    border-bottom: 1px solid $c-light-periwinkle;
+
+    &-left {
+      flex: 1;
+      max-width: 100%;
+    }
+
+    &-right {
+      width: 182px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    padding-left: 11px;
+
+    &-item {
+      &:last-of-type {
+        .navigation__list-btn {
+          margin-right: 0;
+        }
+      }
+    }
+
+    &-btn {
+      @extend %fontsPTSans;
+      font-size: 14px;
+      line-height: 1.43;
+      color: $c-brownish-grey;
+      margin-right: 32px;
+      @include transition(color);
+
+      &:hover {
+        color: #192e47;
+        @include transition(color);
+      }
+    }
+  }
+}
+
+// SECTION navigation :: END

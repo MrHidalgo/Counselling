@@ -1,0 +1,44 @@
+// SECTION navigation :: START
+
+-
+  var navigationArr = [
+    'Contact',
+    'About us',
+    'Legal terms',
+    'Cookies Policy',
+    'Privacy Notice',
+    'Browse by region',
+    'Press Centre',
+    'Find a supervisor',
+    'Site map',
+    'Site help'
+  ];
+
+section#navigation.navigation
+  .c-grid
+    .navigation__wrapper
+      .navigation__wrapper-left
+
+        ul.navigation__list
+          each val, idx in navigationArr
+            li.navigation__list-item
+              a.navigation__list-btn(href="#" class="" title="")!= val
+
+      .navigation__wrapper-right
+
+        .social
+          ul.social__list
+            li.social__list-item
+              a.social__list-btn(href="#" class="" title="")
+                i.icon-font.icon-facebook
+            li.social__list-item
+              a.social__list-btn(href="#" class="" title="")
+                i.icon-font.icon-instagram
+            li.social__list-item
+              a.social__list-btn(href="#" class="" title="")
+                i.icon-font.icon-twitter
+            li.social__list-item
+              a.social__list-btn(href="#" class="" title="")
+                i.icon-font.icon-youtube
+
+// SECTION navigation :: END

@@ -1,5 +1,57 @@
 // COMMON :: START
 
+// social
+.social {
+  &__list {
+    display: flex;
+    align-items: center;
+
+    &-item {
+      &:last-of-type {
+        .social__list-btn {
+          margin-right: 0;
+        }
+      }
+    }
+
+    &-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      margin-right: 9px;
+      border-radius: 100%;
+      border: solid 1px $c-very-light-pink;
+      background-color: transparent;
+      @include transition(border-color);
+
+      &:hover {
+        border-color: #192e47;
+        @include transition(border-color);
+      }
+
+      .icon-font {
+        color: #192e47;
+
+        &.icon-facebook {
+          font-size: 16px;
+        }
+        &.icon-instagram {
+          font-size: 16px;
+        }
+        &.icon-twitter {
+          font-size: 16px;
+        }
+        &.icon-youtube {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+// social :: end
+
 // logotype
 .logotype {
   &--footer {

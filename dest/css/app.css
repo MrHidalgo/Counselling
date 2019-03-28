@@ -1,12 +1,51 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:400,700");
 /* line 7, src/scss/_utilities/_extend.scss */
-.copyright__text {
+.copyright__text, .navigation__list-btn {
   font-family: 'PT Sans', sans-serif;
 }
 
 /* line 10, src/scss/_utilities/_extend.scss */
 body {
   font-family: 'PT Serif', serif;
+}
+
+@font-face {
+  font-family: "iconFont";
+  src: url("../fonts/iconFont.eot");
+  src: url("../fonts/iconFont.eot?#iefix") format("eot"), url("../fonts/iconFont.woff2") format("woff2"), url("../fonts/iconFont.woff") format("woff"), url("../fonts/iconFont.ttf") format("truetype"), url("../fonts/iconFont.svg#iconFont") format("svg");
+}
+
+/* line 23, src/scss/_generated/_spriteFont.scss */
+.icon-facebook:before, .icon-instagram:before, .icon-twitter:before, .icon-youtube:before {
+  font-family: "iconFont", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+}
+
+/* line 47, src/scss/_generated/_spriteFont.scss */
+.icon-facebook:before {
+  content: "";
+}
+
+/* line 47, src/scss/_generated/_spriteFont.scss */
+.icon-instagram:before {
+  content: "";
+}
+
+/* line 47, src/scss/_generated/_spriteFont.scss */
+.icon-twitter:before {
+  content: "";
+}
+
+/* line 47, src/scss/_generated/_spriteFont.scss */
+.icon-youtube:before {
+  content: "";
 }
 
 /* line 1, src/scss/_shared/_main-setting-reset.scss */
@@ -241,7 +280,83 @@ picture {
   }
 }
 
-/* line 6, src/scss/_shared/_common.scss */
+/* line 5, src/scss/_shared/_common.scss */
+.social__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 11, src/scss/_shared/_common.scss */
+.social__list-item:last-of-type .social__list-btn {
+  margin-right: 0;
+}
+
+/* line 17, src/scss/_shared/_common.scss */
+.social__list-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-right: 9px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  border: solid 1px #dbdfe4;
+  background-color: transparent;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 29, src/scss/_shared/_common.scss */
+.social__list-btn:hover {
+  border-color: #192e47;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 34, src/scss/_shared/_common.scss */
+.social__list-btn .icon-font {
+  color: #192e47;
+}
+
+/* line 37, src/scss/_shared/_common.scss */
+.social__list-btn .icon-font.icon-facebook {
+  font-size: 16px;
+}
+
+/* line 40, src/scss/_shared/_common.scss */
+.social__list-btn .icon-font.icon-instagram {
+  font-size: 16px;
+}
+
+/* line 43, src/scss/_shared/_common.scss */
+.social__list-btn .icon-font.icon-twitter {
+  font-size: 16px;
+}
+
+/* line 46, src/scss/_shared/_common.scss */
+.social__list-btn .icon-font.icon-youtube {
+  font-size: 13px;
+}
+
+/* line 58, src/scss/_shared/_common.scss */
 .logotype--footer .logotype__bnt {
   display: -webkit-box;
   display: -webkit-flex;
@@ -249,18 +364,27 @@ picture {
   display: flex;
 }
 
-/* line 11, src/scss/_shared/_common.scss */
+/* line 63, src/scss/_shared/_common.scss */
 .logotype img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 21, src/scss/_shared/_common.scss */
+/* line 73, src/scss/_shared/_common.scss */
 .copyright__text {
   color: #767676;
   font-size: 14px;
   line-height: 1.43;
+}
+
+/* line 1, src/scss/_shared/_iconFont.scss */
+.icon-font {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1;
 }
 
 /* line 5, src/scss/_components/_footer.scss */
@@ -289,6 +413,72 @@ picture {
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+/* line 4, src/scss/_components/home/_navigation.scss */
+.navigation__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 82px;
+  border-top: 1px solid #dbdfe4;
+  border-bottom: 1px solid #dbdfe4;
+}
+
+/* line 11, src/scss/_components/home/_navigation.scss */
+.navigation__wrapper-left {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 100%;
+}
+
+/* line 16, src/scss/_components/home/_navigation.scss */
+.navigation__wrapper-right {
+  width: 182px;
+}
+
+/* line 21, src/scss/_components/home/_navigation.scss */
+.navigation__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 11px;
+}
+
+/* line 28, src/scss/_components/home/_navigation.scss */
+.navigation__list-item:last-of-type .navigation__list-btn {
+  margin-right: 0;
+}
+
+/* line 34, src/scss/_components/home/_navigation.scss */
+.navigation__list-btn {
+  font-size: 14px;
+  line-height: 1.43;
+  color: #767676;
+  margin-right: 32px;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 42, src/scss/_components/home/_navigation.scss */
+.navigation__list-btn:hover {
+  color: #192e47;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
