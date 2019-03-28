@@ -76,20 +76,34 @@
 
     &-btn {
       outline: none;
+      cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
       width: 118px;
       height: 100%;
-      border: none;
       box-shadow: none;
       border-radius: 24px;
+      border: 1px solid #007585;
       background-color: #007585;
+      @include transition(background-color);
+
+      &:hover {
+        background-color: transparent;
+        @include transition(background-color);
+
+        span,
+        .icon-font {
+          color: #007585;
+          @include transition(color);
+        }
+      }
 
       .icon-font {
         margin-right: 7px;
         color: #ffffff;
         font-size: 16px;
+        @include transition(color);
       }
 
       span {
@@ -97,6 +111,7 @@
         font-size: 16px;
         font-weight: bold;
         color: #ffffff;
+        @include transition(color);
       }
     }
   }

@@ -76,6 +76,12 @@
 
 // logotype
 .logotype {
+  &--header {
+    .logotype__bnt {
+      display: flex;
+    }
+  }
+
   &--footer {
     .logotype__bnt {
       display: flex;
