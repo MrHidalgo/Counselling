@@ -831,6 +831,120 @@ picture {
   color: #767676;
 }
 
+/* line 3, src/scss/_components/home/_base.scss */
+.base {
+  padding-bottom: 59px;
+}
+
+/* line 6, src/scss/_components/home/_base.scss */
+.base__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 9, src/scss/_components/home/_base.scss */
+.base__wrapper-left, .base__wrapper-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 51px;
+}
+
+/* line 17, src/scss/_components/home/_base.scss */
+.base__wrapper-middle {
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* line 23, src/scss/_components/home/_base.scss */
+.base__img {
+  padding-bottom: 12px;
+}
+
+/* line 26, src/scss/_components/home/_base.scss */
+.base__img img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 36, src/scss/_components/home/_base.scss */
+.base__info p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  color: #767676;
+}
+
+/* line 43, src/scss/_components/home/_base.scss */
+.base__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 49, src/scss/_components/home/_base.scss */
+.base__list-item:last-of-type .base__list-btn {
+  margin-bottom: 0;
+}
+
+/* line 55, src/scss/_components/home/_base.scss */
+.base__list-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 9px;
+  border: solid 1px #dbdfe4;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 66, src/scss/_components/home/_base.scss */
+.base__list-btn:hover {
+  border-color: #192E47;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 71, src/scss/_components/home/_base.scss */
+.base__list-btn .icon-font {
+  color: #192E47;
+  font-size: 16px;
+}
+
 /* line 3, src/scss/_components/home/_search.scss */
 .search {
   padding-top: 35px;
