@@ -1,0 +1,139 @@
+// SECTION article :: START
+
+.article {
+  position: relative;
+  padding-top: 117px;
+  padding-bottom: 160px;
+
+  &:before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 80px;
+    height: 1px;
+    margin: 0 auto;
+    background-color: $c-light-periwinkle;
+  }
+
+  &__subtitle {
+    padding-bottom: 3px;
+  }
+
+  &__title {
+    padding-bottom: 24px;
+  }
+
+  &__box {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: calc((100% - (24px * 3)) / 4);
+    min-height: 288px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 0 rgba(118, 118, 118, 0.2);
+    background-color: #ffffff;
+
+    &:hover {
+      .article__box-top {
+        img {
+          transform: scale(1.1);
+          @include transition(transform);
+        }
+      }
+    }
+
+    &-wrapper {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    &-top {
+      z-index: 1;
+      overflow: hidden;
+      position: relative;
+      height: 175px;
+
+      img {
+        z-index: 0;
+        @extend %imageResCoverAbs;
+        @include transition(transform);
+      }
+    }
+
+    &-bottom {
+      min-height: calc(100% - 175px);
+      padding: 7px 15px 17px;
+    }
+
+    &-title {
+      min-height: 44px;
+      margin-bottom: 20px;
+      @extend %fontsPTSans;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.38;
+      color: $c-dark-slate-blue;
+    }
+
+    &-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &--left,
+      &--right {
+        flex: 1;
+      }
+
+      &--right {
+        display: flex;
+        justify-content: flex-end;
+
+        span {
+          @extend %fontsPTSans;
+          font-size: 14px;
+          line-height: 1.14;
+          color: $c-brownish-grey;
+        }
+      }
+    }
+
+    &-user {
+      display: flex;
+      align-items: center;
+
+      &--left {
+        padding-right: 9px;
+      }
+
+      &--right {
+        p {
+          @extend %fontsPTSans;
+          font-size: 14px;
+          line-height: 1.14;
+          color: $c-brownish-grey;
+        }
+      }
+
+      &--circle {
+        overflow: hidden;
+        position: relative;
+        width: 24px;
+        height: 24px;
+        border-radius: 100%;
+
+        img {
+          z-index: 0;
+          @extend %imageResCoverAbs;
+        }
+      }
+    }
+  }
+}
+
+// SECTION article :: END
