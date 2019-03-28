@@ -1,0 +1,23 @@
+// FOOTER :: START
+
+.footer {
+
+  &__wrapper {
+    display: flex;
+    min-height: 128px;
+    padding-top: 27px;
+
+    &-left,
+    &-right {
+      width: 50%;
+      min-height: 100%;
+    }
+
+    &-right {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+// FOOTER :: END

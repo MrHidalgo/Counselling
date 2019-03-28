@@ -1,0 +1,31 @@
+// COMMON :: START
+
+// logotype
+.logotype {
+  &--footer {
+    .logotype__bnt {
+      display: flex;
+    }
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+// logotype :: end
+
+  // copyright
+.copyright {
+  &__text {
+    color: $c-brownish-grey;
+    font-size: 14px;
+    line-height: 1.43;
+    @extend %fontsPTSans;
+  }
+}
+
+// copyright :: end
+
+// COMMON :: END
