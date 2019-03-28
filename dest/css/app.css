@@ -442,16 +442,22 @@ picture {
 
 /* line 3, src/scss/_components/_header.scss */
 .header {
+  z-index: 1000;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
   border-bottom: 1px solid #dbdfe4;
 }
 
-/* line 6, src/scss/_components/_header.scss */
+/* line 11, src/scss/_components/_header.scss */
 .header .c-grid-fluid {
   padding-left: 25px;
   padding-right: 25px;
 }
 
-/* line 11, src/scss/_components/_header.scss */
+/* line 16, src/scss/_components/_header.scss */
 .header__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -464,12 +470,12 @@ picture {
   min-height: 87px;
 }
 
-/* line 16, src/scss/_components/_header.scss */
+/* line 21, src/scss/_components/_header.scss */
 .header__wrapper-left {
   padding-right: 39px;
 }
 
-/* line 20, src/scss/_components/_header.scss */
+/* line 25, src/scss/_components/_header.scss */
 .header__wrapper-middle {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -478,13 +484,13 @@ picture {
   max-width: 100%;
 }
 
-/* line 25, src/scss/_components/_header.scss */
+/* line 30, src/scss/_components/_header.scss */
 .header__wrapper-right {
   width: 100%;
   max-width: 314px;
 }
 
-/* line 31, src/scss/_components/_header.scss */
+/* line 36, src/scss/_components/_header.scss */
 .header__btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -507,29 +513,29 @@ picture {
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 41, src/scss/_components/_header.scss */
+/* line 46, src/scss/_components/_header.scss */
 .header__btn--mark {
   margin-right: 10px;
 }
 
-/* line 44, src/scss/_components/_header.scss */
+/* line 49, src/scss/_components/_header.scss */
 .header__btn--mark .icon-font {
   font-size: 24px;
   color: #192E47;
 }
 
-/* line 50, src/scss/_components/_header.scss */
+/* line 55, src/scss/_components/_header.scss */
 .header__btn--search {
   margin-left: 10px;
 }
 
-/* line 53, src/scss/_components/_header.scss */
+/* line 58, src/scss/_components/_header.scss */
 .header__btn--search .icon-font {
   font-size: 24px;
   color: #192E47;
 }
 
-/* line 59, src/scss/_components/_header.scss */
+/* line 64, src/scss/_components/_header.scss */
 .header__btn--login {
   margin-right: 4px;
   width: 83px;
@@ -541,7 +547,7 @@ picture {
   color: #132e49;
 }
 
-/* line 68, src/scss/_components/_header.scss */
+/* line 73, src/scss/_components/_header.scss */
 .header__btn--login:hover {
   border-color: #008192;
   background-color: #008192;
@@ -551,7 +557,7 @@ picture {
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 76, src/scss/_components/_header.scss */
+/* line 81, src/scss/_components/_header.scss */
 .header__btn--get {
   margin-left: 4px;
   width: 106px;
@@ -563,7 +569,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 85, src/scss/_components/_header.scss */
+/* line 90, src/scss/_components/_header.scss */
 .header__btn--get:hover {
   border-color: #dbdfe4;
   background-color: transparent;
@@ -573,7 +579,7 @@ picture {
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 93, src/scss/_components/_header.scss */
+/* line 98, src/scss/_components/_header.scss */
 .header__btn-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -589,7 +595,7 @@ picture {
           justify-content: space-between;
 }
 
-/* line 99, src/scss/_components/_header.scss */
+/* line 104, src/scss/_components/_header.scss */
 .header__btn-left {
   position: relative;
   display: -webkit-box;
@@ -603,7 +609,7 @@ picture {
   padding-right: 24px;
 }
 
-/* line 105, src/scss/_components/_header.scss */
+/* line 110, src/scss/_components/_header.scss */
 .header__btn-left:before {
   content: '';
   z-index: 0;
@@ -618,7 +624,7 @@ picture {
   background-color: #f6f6f6;
 }
 
-/* line 118, src/scss/_components/_header.scss */
+/* line 123, src/scss/_components/_header.scss */
 .header__btn-right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -631,7 +637,7 @@ picture {
   padding-left: 24px;
 }
 
-/* line 126, src/scss/_components/_header.scss */
+/* line 131, src/scss/_components/_header.scss */
 .header__nav-list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -643,13 +649,13 @@ picture {
           align-items: center;
 }
 
-/* line 131, src/scss/_components/_header.scss */
+/* line 136, src/scss/_components/_header.scss */
 .header__nav-item {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-/* line 136, src/scss/_components/_header.scss */
+/* line 141, src/scss/_components/_header.scss */
 .header__nav-link {
   position: relative;
   display: -webkit-box;
@@ -667,7 +673,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 144, src/scss/_components/_header.scss */
+/* line 149, src/scss/_components/_header.scss */
 .header__nav-link:before {
   content: '';
   opacity: 0;
@@ -685,7 +691,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 158, src/scss/_components/_header.scss */
+/* line 163, src/scss/_components/_header.scss */
 .header__nav-link:hover {
   color: #008192;
   -webkit-transition: color 0.3s ease-in-out;
@@ -693,12 +699,12 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 163, src/scss/_components/_header.scss */
+/* line 168, src/scss/_components/_header.scss */
 .header__nav-link.is-active {
   color: #008192;
 }
 
-/* line 166, src/scss/_components/_header.scss */
+/* line 171, src/scss/_components/_header.scss */
 .header__nav-link.is-active:before {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -706,7 +712,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 172, src/scss/_components/_header.scss */
+/* line 177, src/scss/_components/_header.scss */
 .header__nav-link--drop .icon-corner {
   font-size: 6px;
   margin-left: 10px;
