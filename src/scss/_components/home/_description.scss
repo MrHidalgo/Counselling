@@ -135,6 +135,10 @@
       @include adaptive(1199) {
         padding-left: 107px;
       }
+      @include adaptive(991) {
+        padding-left: 0;
+        padding-right: 0;
+      }
     }
 
     .description__image-wrapper {

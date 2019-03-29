@@ -12,32 +12,39 @@ header#header.header
           a.logotype__bnt(href="/" class="" title="")
             img(src="/img/img-header-logo.svg" alt="" title="")
 
-      .header__wrapper-middle
+        .header__wrapper-cover
+          a.header__btn.header__btn--search(href="#" class="" title="")
+            i.icon-font.icon-search
 
-        .header__nav
-          ul.header__nav-list
-            li.header__nav-item
-              a.header__nav-link.header__nav-link--drop(href="#" class="" title="")
-                span!= "Getting Help"
-                i.icon-font.icon-corner
-            li.header__nav-item
-              a.header__nav-link.is-active(href="#" class="" title="")!= "Community"
-            li.header__nav-item
-              a.header__nav-link(href="#" class="" title="")!= "Conditions"
-            li.header__nav-item
-              a.header__nav-link.header__nav-link--more(href="#" class="" title="")
-                i.icon-font.icon-more
+          +hamburger()
 
-      .header__wrapper-right
+      .header__wrapper-mobile
+        .header__wrapper-middle
 
-        .header__btn-wrapper
-          .header__btn-left
-            a.header__btn.header__btn--mark(href="#" class="" title="")
-              i.icon-font.icon-mark
-            a.header__btn.header__btn--search(href="#" class="" title="")
-              i.icon-font.icon-search
-          .header__btn-right
-            a.header__btn.header__btn--login(href="#" class="" title="")!= "Log in"
-            a.header__btn.header__btn--get(href="#" class="" title="")!= "Get Started"
+          .header__nav
+            ul.header__nav-list
+              li.header__nav-item
+                a.header__nav-link.header__nav-link--drop(href="#" class="" title="")
+                  span!= "Getting Help"
+                  i.icon-font.icon-corner
+              li.header__nav-item
+                a.header__nav-link.is-active(href="#" class="" title="")!= "Community"
+              li.header__nav-item
+                a.header__nav-link(href="#" class="" title="")!= "Conditions"
+              li.header__nav-item
+                a.header__nav-link.header__nav-link--more(href="#" class="" title="")
+                  i.icon-font.icon-more
+
+        .header__wrapper-right
+
+          .header__btn-wrapper
+            .header__btn-left
+              a.header__btn.header__btn--mark(href="#" class="" title="")
+                i.icon-font.icon-mark
+              a.header__btn.header__btn--search(href="#" class="" title="")
+                i.icon-font.icon-search
+            .header__btn-right
+              a.header__btn.header__btn--login(href="#" class="" title="")!= "Log in"
+              a.header__btn.header__btn--get(href="#" class="" title="")!= "Get Started"
 
 // HEADER :: END

@@ -4,6 +4,9 @@
   position: relative;
   padding-top: 119px;
   padding-bottom: 155px;
+  @include adaptive(991) {
+    padding-bottom: 130px;
+  }
 
   &:before {
     content: '';
@@ -37,6 +40,10 @@
     box-shadow: 0 0 10px 0 rgba(118, 118, 118, 0.2);
     background-color: #ffffff;
     @include transition(box-shadow);
+    @include adaptive(991) {
+      max-width: calc((100% - 24px) / 2);
+      margin-bottom: 24px;
+    }
 
     &:hover {
       box-shadow: 0 0 7px 0 rgba(118, 118, 118, 0.15);
@@ -53,6 +60,9 @@
     &-wrapper {
       display: flex;
       justify-content: space-between;
+      @include adaptive(991) {
+        flex-wrap: wrap;
+      }
     }
 
     &-top {

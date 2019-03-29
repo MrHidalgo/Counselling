@@ -21,6 +21,33 @@
     &-left {
       padding-top: 6px;
       padding-right: 19px;
+      @include adaptive(991) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 0;
+        padding-right: 0;
+      }
+    }
+
+    &-cover {
+      display: flex;
+      align-items: center;
+
+      .header__btn--search {
+        margin-left: 0;
+        margin-right: 21px;
+      }
+    }
+
+    &-mobile {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      @include adaptive(991) {
+        display: none;
+      }
     }
 
     &-middle {
