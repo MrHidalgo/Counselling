@@ -107,6 +107,9 @@
       padding-left: 45px;
       width: 100%;
       max-width: 579px;
+      @include adaptive(1199) {
+        max-width: 539px;
+      }
 
       p {
         padding-bottom: 0;
@@ -129,6 +132,9 @@
       margin-right: 0;
       padding-left: 122px;
       padding-right: 121px;
+      @include adaptive(1199) {
+        padding-left: 107px;
+      }
     }
 
     .description__image-wrapper {

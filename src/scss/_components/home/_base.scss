@@ -12,6 +12,10 @@
       justify-content: center;
       flex: 1;
       min-width: 51px;
+      @include adaptive(1199) {
+        min-width: 66px;
+        padding-right: 15px;
+      }
     }
 
     &-middle {

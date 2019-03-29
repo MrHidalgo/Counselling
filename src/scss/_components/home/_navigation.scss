@@ -7,6 +7,11 @@
     min-height: 82px;
     border-top: 1px solid $c-light-periwinkle;
     border-bottom: 1px solid $c-light-periwinkle;
+    @include adaptive(1439) {
+      flex-wrap: wrap;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
 
     &-left {
       flex: 1;
@@ -15,6 +20,10 @@
 
     &-right {
       width: 182px;
+      @include adaptive(1439) {
+        width: 100%;
+        padding-top: 30px;
+      }
     }
   }
 
@@ -22,6 +31,9 @@
     display: flex;
     align-items: center;
     padding-left: 11px;
+    @include adaptive(1439) {
+      justify-content: center;
+    }
 
     &-item {
       &:last-of-type {
@@ -38,6 +50,9 @@
       color: $c-brownish-grey;
       margin-right: 32px;
       @include transition(color);
+      @include adaptive(1199) {
+        margin-right: 20px;
+      }
 
       &:hover {
         color: #192e47;
