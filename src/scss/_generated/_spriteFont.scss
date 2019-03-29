@@ -30,26 +30,32 @@
 	@if $filename == corner {
 		$char: "\E001";
 	}
-	@if $filename == facebook {
+	@if $filename == email {
 		$char: "\E002";
 	}
-	@if $filename == instagram {
+	@if $filename == facebook {
 		$char: "\E003";
 	}
-	@if $filename == mark {
+	@if $filename == instagram {
 		$char: "\E004";
 	}
-	@if $filename == more {
+	@if $filename == link {
 		$char: "\E005";
 	}
-	@if $filename == search {
+	@if $filename == mark {
 		$char: "\E006";
 	}
-	@if $filename == twitter {
+	@if $filename == more {
 		$char: "\E007";
 	}
-	@if $filename == youtube {
+	@if $filename == search {
 		$char: "\E008";
+	}
+	@if $filename == twitter {
+		$char: "\E009";
+	}
+	@if $filename == youtube {
+		$char: "\E00A";
 	}
 
 	@return $char;
@@ -70,12 +76,20 @@
 	@include icon(corner);
 
 }
+.icon-email {
+	@include icon(email);
+
+}
 .icon-facebook {
 	@include icon(facebook);
 
 }
 .icon-instagram {
 	@include icon(instagram);
+
+}
+.icon-link {
+	@include icon(link);
 
 }
 .icon-mark {

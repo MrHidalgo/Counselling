@@ -1,0 +1,148 @@
+// SECTION info :: START
+
+.info {
+  padding-bottom: 35px;
+
+  .c-grid {
+    max-width: 779px;
+  }
+
+  &__wrapper {
+    &-0 {
+      padding: 24px 15px;
+      border-bottom: 1px solid #dbdfe4;
+    }
+
+    &-1 {
+      padding: 24px 15px 31px;
+    }
+
+    &-2 {
+      min-height: 164px;
+      padding: 17px 31px 19px 17px;
+      border-radius: 4px;
+      background-color: #f6f6f6;
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      font-family: "PT Sans", sans-serif;
+      font-weight: bold;
+      line-height: 1.38;
+      color: #132e49;
+    }
+
+    &-list {
+      display: flex;
+      align-items: center;
+
+      li {
+        &:first-of-type {
+          margin-left: 0;
+        }
+      }
+
+      a {
+        display: flex;
+        margin-left: 23px;
+
+        .icon-font {
+          color: #192E47;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  &__tags {
+    display: flex;
+    justify-content: space-between;
+
+    &-right {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    p {
+      font-family: "PT Sans", sans-serif;
+      font-weight: bold;
+      line-height: 1.38;
+      color: #132e49;
+    }
+
+    &-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 32px;
+      padding-left: 16px;
+      padding-right: 16px;
+      margin-left: 8px;
+      border-radius: 16px;
+      background-color: #f6f6f6;
+      font-family: "PT Sans", sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      color: #008192;
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__user {
+    display: flex;
+
+    &-left {
+      width: 112px;
+    }
+
+    &-right {
+      flex: 1;
+      max-width: 100%;
+    }
+
+    &-circle {
+      z-index: 1;
+      overflow: hidden;
+      position: relative;
+      width: 88px;
+      height: 88px;
+      border-radius: 100%;
+
+      img {
+        z-index: 0;
+        @extend %imageResCoverAbs;
+      }
+    }
+
+    p {
+      padding-bottom: 5px;
+      font-family: "PT Sans", sans-serif;
+      font-weight: bold;
+      line-height: 1.38;
+      color: #132e49;
+    }
+
+    span {
+      display: block;
+      padding-bottom: 10px;
+      line-height: 1.38;
+      color: #767676;
+    }
+
+    a {
+      text-decoration: underline;
+      font-family: "PT Sans", sans-serif;
+      line-height: 1.38;
+      color: #008192;
+    }
+  }
+}
+
+// SECTION info :: END
