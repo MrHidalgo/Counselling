@@ -48,9 +48,17 @@
         display: flex;
         margin-left: 23px;
 
+        &:hover {
+          .icon-font {
+            color: rgba(#192E47, 0.75);
+            @include transition(color);
+          }
+        }
+
         .icon-font {
           color: #192E47;
           font-size: 20px;
+          @include transition(color);
         }
       }
     }
@@ -89,6 +97,13 @@
       font-size: 14px;
       font-weight: bold;
       color: #008192;
+      @include transition(background-color, color);
+
+      &:hover {
+        background-color: rgba(#f6f6f6, 0.75);
+        color: rgba(#008192, 0.75);
+        @include transition(background-color, color);
+      }
 
       &:first-of-type {
         margin-left: 0;
@@ -143,6 +158,12 @@
       font-family: "PT Sans", sans-serif;
       line-height: 1.38;
       color: #008192;
+      @include transition(color);
+
+      &:hover {
+        color: #132e49;
+        @include transition(color);
+      }
     }
   }
 }

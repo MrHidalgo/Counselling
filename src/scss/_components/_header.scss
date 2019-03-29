@@ -1,10 +1,10 @@
 // HEADER :: START
 
 .header {
-  //z-index: 1000;
-  //position: sticky;
-  //top: 0;
-  //left: 0;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  left: 0;
   background-color: #ffffff;
   border-bottom: 1px solid $c-light-periwinkle;
 
@@ -45,22 +45,30 @@
     text-align: center;
     @include transition(border-color, background-color, color);
 
-    &--mark {
-      margin-right: 10px;
+    &--mark,
+    &--search {
+      &:hover {
+        .icon-font {
+          color: #008192;
+          @include transition(color);
+        }
+      }
 
       .icon-font {
         font-size: 24px;
         color: #192E47;
+        @include transition(color);
       }
+    }
+
+    &--mark {
+      margin-right: 10px;
+
+
     }
 
     &--search {
       margin-left: 10px;
-
-      .icon-font {
-        font-size: 24px;
-        color: #192E47;
-      }
     }
 
     &--login {
@@ -181,6 +189,7 @@
           @include transition(opacity);
         }
       }
+
       &--drop {
         padding-top: 3px;
 

@@ -86,6 +86,7 @@
       justify-content: center;
       width: 118px;
       height: 100%;
+      padding-top: 2px;
       box-shadow: none;
       border-radius: 24px;
       border: 1px solid #007585;
@@ -153,6 +154,13 @@
       line-height: 1;
       text-align: center;
       color: #007585;
+      @include transition(background-color, color);
+
+      &:hover {
+        background-color: rgba(#f6f6f6, 0.75);
+        color: rgba(#007585, 0.75);
+        @include transition(background-color, color);
+      }
 
       &:last-of-type {
         margin-right: 0;
