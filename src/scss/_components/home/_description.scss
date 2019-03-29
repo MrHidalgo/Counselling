@@ -1,5 +1,139 @@
 // SECTION description :: START
 
-.description {}
+.description {
+  &__text,
+  &__title,
+  &__subtitle,
+  &__image-wrapper {
+    width: 100%;
+    max-width: 749px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__text {
+    padding-bottom: 36px;
+    font-size: 21px;
+    line-height: 1.57;
+    color: #767676;
+
+    &--letter {
+      overflow: hidden;
+
+      span {
+        float: left;
+        margin-right: 5px;
+        font-size: 72px;
+        line-height: 60px;
+        font-weight: bold;
+        color: #008192;
+      }
+    }
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.42;
+    color: #122e49;
+  }
+
+  &__title {
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-bottom: 46px;
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 1.35;
+    color: #132e49;
+  }
+
+  &__image {
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 21px;
+    }
+
+    &-cover {
+      padding-bottom: 12px;
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    &-info {
+      p {
+        font-family: "PT Sans", sans-serif;
+        font-size: 14px;
+        color: #767676;
+      }
+    }
+  }
+
+  &__blockquote {
+    display: flex;
+    width: 100%;
+    max-width: 929px;
+    padding-bottom: 36px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &-left {
+      width: 315px;
+
+      i {
+        display: flex;
+        margin-bottom: 27px;
+        height: 5px;
+        background-color: #008192;
+      }
+    }
+
+    &-right {
+      flex: 1;
+      padding-left: 45px;
+      width: 100%;
+      max-width: 529px;
+
+      p {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &__content {
+    overflow: hidden;
+    width: 100%;
+    max-width: 925px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+
+    .description__text {
+      width: auto;
+      max-width: none;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 90px;
+    }
+
+    .description__image-wrapper {
+      float: right;
+      display: inline-block;
+      width: auto;
+      max-width: 487px;
+      padding-left: 34px;
+      margin-left: 0;
+      margin-right: 0;
+      padding-top: 10px;
+    }
+  }
+}
 
 // SECTION description :: END
