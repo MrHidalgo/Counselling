@@ -1,20 +1,68 @@
 // FOOTER :: START
 
 .footer {
+  position: relative;
+
+  &__btn {
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    right: 15px;
+    bottom: 30px;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    border: solid 1px #dbdfe4;
+    background-color: #ffffff;
+    @include transition(border-color);
+    @include adaptive(767) {
+      display: flex;
+    }
+
+    &:hover {
+      border-color: #132e49;
+      @include transition(border-color);
+    }
+
+    .icon-font {
+      font-size: 15px;
+      color: #132e49;
+    }
+  }
+
   &__wrapper {
     display: flex;
     min-height: 128px;
     padding-top: 23px;
+    @include adaptive(767) {
+      display: block;
+      min-height: 246px;
+    }
 
     &-left,
     &-right {
       width: 50%;
       min-height: 100%;
+      @include adaptive(767) {
+        width: 100%;
+        min-height: 0;
+      }
+    }
+
+    &-left {
+      @include adaptive(767) {
+        padding-top: 16px;
+      }
     }
 
     &-right {
       display: flex;
       justify-content: flex-end;
+      @include adaptive(767) {
+        justify-content: center;
+        padding-top: 21px;
+      }
     }
   }
 }

@@ -16,9 +16,15 @@
     font-size: 21px;
     line-height: 1.58;
     color: #767676;
+    @include adaptive(767) {
+      font-size: 18px;
+    }
 
     &--ni {
       padding-bottom: 43px;
+      @include adaptive(767) {
+        padding-bottom: 19px;
+      }
     }
 
     &--letter {
@@ -31,6 +37,11 @@
         line-height: 60px;
         font-weight: bold;
         color: #008192;
+        @include adaptive(767) {
+          margin-right: 7px;
+          font-size: 57px;
+          line-height: 50px;
+        }
       }
     }
   }
@@ -40,6 +51,9 @@
     font-weight: bold;
     line-height: 1.42;
     color: #122e49;
+    @include adaptive(767) {
+      font-size: 22px;
+    }
   }
 
   &__title {
@@ -50,6 +64,12 @@
     font-weight: bold;
     line-height: 1.4;
     color: #132e49;
+    @include adaptive(767) {
+      font-size: 22px;
+      padding-top: 24px;
+      padding-left: 17px;
+      padding-bottom: 47px;
+    }
   }
 
   &__image {
@@ -57,6 +77,10 @@
       display: flex;
       flex-direction: column;
       padding-bottom: 21px;
+      @include adaptive(767) {
+        width: calc(100% + 30px);
+        margin-left: -15px;
+      }
     }
 
     &-cover {
@@ -76,6 +100,11 @@
         font-family: "PT Sans", sans-serif;
         font-size: 14px;
         color: #767676;
+        @include adaptive(767) {
+          padding-left: 15px;
+          padding-right: 15px;
+          text-align: center;
+        }
       }
     }
   }
@@ -88,9 +117,20 @@
     padding-bottom: 35px;
     margin-left: auto;
     margin-right: auto;
+    @include adaptive(767) {
+      flex-wrap: wrap;
+      padding-top: 29px;
+    }
 
     &-left {
       width: 315px;
+      @include adaptive(767) {
+        width: 100%;
+        margin-bottom: 29px;
+        padding-bottom: 23px;
+        border-bottom: 1px solid #dbdfe4;
+        text-align: center;
+      }
 
       i {
         display: flex;
@@ -110,6 +150,10 @@
       @include adaptive(1199) {
         max-width: 539px;
       }
+      @include adaptive(767) {
+        top: 0;
+        padding-left: 0;
+      }
 
       p {
         padding-bottom: 0;
@@ -124,6 +168,13 @@
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 65px;
+    @include adaptive(767) {
+      display: flex;
+      flex-direction: column-reverse;
+      width: calc(100% + 30px);
+      margin-left: -15px;
+      padding-bottom: 50px;
+    }
 
     .description__text {
       width: auto;
@@ -139,6 +190,10 @@
         padding-left: 0;
         padding-right: 0;
       }
+      @include adaptive(767) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
     }
 
     .description__image-wrapper {
@@ -150,6 +205,17 @@
       margin-left: 0;
       margin-right: 0;
       padding-top: 10px;
+      @include adaptive(767) {
+        float: none;
+        display: block;
+        max-width: 100%;
+        padding-left: 0;
+
+        img {
+          //margin-left: auto;
+          //margin-right: auto;
+        }
+      }
     }
   }
 }

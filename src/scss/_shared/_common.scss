@@ -7,6 +7,9 @@
   line-height: 1.42;
   text-align: center;
   color: $c-dark-slate-blue;
+  @include adaptive(767) {
+    font-size: 18px;
+  }
 }
 // title :: end
 
@@ -19,6 +22,9 @@
   text-align: center;
   color: $c-ocean;
   text-transform: uppercase;
+  @include adaptive(767) {
+    font-size: 12px;
+  }
 }
 // subtitle :: end
 
@@ -80,6 +86,11 @@
 // logotype
 .logotype {
   &--header {
+    @include adaptive(767) {
+      width: 183px;
+      padding-top: 4px;
+    }
+
     .logotype__bnt {
       display: flex;
     }
@@ -88,6 +99,13 @@
   &--footer {
     .logotype__bnt {
       display: flex;
+
+      img {
+        @include adaptive(767) {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
     }
   }
 

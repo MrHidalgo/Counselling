@@ -9,10 +9,17 @@
     &-0 {
       padding: 24px 15px 22px 18px;
       border-bottom: 1px solid #dbdfe4;
+      @include adaptive(767) {
+        padding-bottom: 33px;
+        border-top: 1px solid #dbdfe4;
+      }
     }
 
     &-1 {
       padding: 24px 16px 31px 19px;
+      @include adaptive(767) {
+        padding-bottom: 62px;
+      }
     }
 
     &-2 {
@@ -20,33 +27,64 @@
       padding: 17px 31px 16px 17px;
       border-radius: 4px;
       background-color: #f6f6f6;
+      @include adaptive(767) {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
     }
   }
 
   &__social {
     display: flex;
     justify-content: space-between;
+    @include adaptive(767) {
+      flex-wrap: wrap;
+    }
+
+    &-left,
+    &-right {
+      @include adaptive(767) {
+        width: 100%;
+      }
+    }
 
     p {
       font-family: "PT Sans", sans-serif;
       font-weight: bold;
       line-height: 1.38;
       color: #132e49;
+      @include adaptive(767) {
+        padding-top: 2px;
+        padding-bottom: 30px;
+        text-align: center;
+      }
     }
 
     &-list {
       display: flex;
       align-items: center;
+      @include adaptive(767) {
+        justify-content: center;
+      }
 
       li {
         &:first-of-type {
-          margin-left: 0;
+          a {
+            margin-left: 0;
+            @include adaptive(767) {
+              margin-left: 11px;
+            }
+          }
         }
       }
 
       a {
         display: flex;
         margin-left: 23px;
+        @include adaptive(767) {
+          margin-left: 11px;
+          margin-right: 11px;
+        }
 
         &:hover {
           .icon-font {
@@ -68,10 +106,24 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include adaptive(767) {
+      flex-wrap: wrap;
+    }
+
+    &-left {
+      @include adaptive(767) {
+        width: 100%;
+        text-align: center;
+      }
+    }
 
     &-right {
       display: flex;
       justify-content: space-between;
+      @include adaptive(767) {
+        width: 100%;
+        justify-content: center;
+      }
     }
 
     p {
@@ -81,6 +133,10 @@
       font-weight: bold;
       line-height: 1.38;
       color: #132e49;
+      @include adaptive(767) {
+        padding-top: 3px;
+        padding-bottom: 17px;
+      }
     }
 
     &-link {
@@ -113,9 +169,17 @@
 
   &__user {
     display: flex;
+    @include adaptive(767) {
+      flex-wrap: wrap;
+    }
 
     &-left {
       width: 112px;
+      @include adaptive(767) {
+        width: 100%;
+        padding-top: 2px;
+        padding-bottom: 17px;
+      }
     }
 
     &-right {
@@ -131,6 +195,10 @@
       width: 88px;
       height: 88px;
       border-radius: 100%;
+      @include adaptive(767) {
+        margin-left: auto;
+        margin-right: auto;
+      }
 
       img {
         z-index: 0;
@@ -144,6 +212,10 @@
       font-weight: bold;
       line-height: 1.38;
       color: #132e49;
+      @include adaptive(767) {
+        padding-bottom: 12px;
+        text-align: center;
+      }
     }
 
     span {
@@ -151,6 +223,11 @@
       padding-bottom: 10px;
       line-height: 1.38;
       color: #767676;
+      @include adaptive(767) {
+        padding-bottom: 17px;
+        text-align: center;
+        line-height: 1.45;
+      }
     }
 
     a {
@@ -159,6 +236,9 @@
       line-height: 1.38;
       color: #008192;
       @include transition(color);
+      @include adaptive(767) {
+        display: none;
+      }
 
       &:hover {
         color: #132e49;

@@ -42,20 +42,23 @@
 	@if $filename == link {
 		$char: "\E005";
 	}
-	@if $filename == mark {
+	@if $filename == location {
 		$char: "\E006";
 	}
-	@if $filename == more {
+	@if $filename == mark {
 		$char: "\E007";
 	}
-	@if $filename == search {
+	@if $filename == more {
 		$char: "\E008";
 	}
-	@if $filename == twitter {
+	@if $filename == search {
 		$char: "\E009";
 	}
-	@if $filename == youtube {
+	@if $filename == twitter {
 		$char: "\E00A";
+	}
+	@if $filename == youtube {
+		$char: "\E00B";
 	}
 
 	@return $char;
@@ -90,6 +93,10 @@
 }
 .icon-link {
 	@include icon(link);
+
+}
+.icon-location {
+	@include icon(location);
 
 }
 .icon-mark {

@@ -3,6 +3,10 @@
 .main {
   padding-top: 60px;
   padding-bottom: 59px;
+  @include adaptive(767) {
+    padding-top: 19px;
+    padding-bottom: 22px;
+  }
 
   &__wrapper {
     width: 100%;
@@ -22,14 +26,18 @@
     line-height: 1.38;
     color: #008192;
     text-transform: uppercase;
+    @include adaptive(767) {
+      padding-bottom: 6px;
+    }
   }
 
   &__title {
     padding-bottom: 23px;
-    font-size: 45px;
+    //font-size: 45px;
     font-weight: bold;
     line-height: 1.24;
     color: #132e49;
+    @include fluid(font-size, 375px, 992px, 22px, 45px);
   }
 
   &__user {
@@ -64,6 +72,9 @@
       font-weight: bold;
       line-height: 1.38;
       color: #132e49;
+      @include adaptive(767) {
+        top: 0;
+      }
     }
 
     span {
@@ -73,6 +84,16 @@
       font-size: 14px;
       line-height: 1.43;
       color: #767676;
+      @include adaptive(767) {
+        top: -2px;
+      }
+    }
+
+    p,
+    span {
+      @include adaptive(767) {
+        font-size: 14px;
+      }
     }
   }
 }

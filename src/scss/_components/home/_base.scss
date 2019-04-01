@@ -1,7 +1,14 @@
 // SECTION base :: START
 
 .base {
-  padding-bottom: 60px;
+  padding-bottom: 36px;
+
+  .c-grid {
+    @include adaptive(767) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 
   &__wrapper {
     display: flex;
@@ -15,6 +22,9 @@
       @include adaptive(1199) {
         min-width: 66px;
         padding-right: 15px;
+      }
+      @include adaptive(767) {
+        display: none;
       }
     }
 
@@ -41,6 +51,11 @@
       font-family: "PT Sans", sans-serif;
       font-size: 14px;
       color: #767676;
+      @include adaptive(767) {
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+      }
     }
   }
 
